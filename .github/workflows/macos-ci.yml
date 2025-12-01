@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       # Example: if you need dependencies (e.g. via Homebrew or other)
       - name: Install dependencies
