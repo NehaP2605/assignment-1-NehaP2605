@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: [self-hosted, macOS]
+    runs-on: macos-latest
 
     steps:
       - name: Checkout repository
@@ -17,9 +17,11 @@ jobs:
       - name: Install dependencies
         run: |
           brew update
+          # Example: brew install cmake or python or any dependencies
 
       - name: Build / Run
         run: |
-          echo "Running on self-hosted macOS"
+          echo "Running on GitHub-hosted macOS"
           pwd
           ls -l
+          # Add your actual build or test commands here
